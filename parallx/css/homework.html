@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            height: 2000PX;
+        }
+
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .top-navbar {
+            border-top: 20px solid sandybrown;
+        }
+
+        .banner {
+            height: 70vh;
+            background-image: url(1210-21\單頁式網站\img\11.jpg);
+            background-size: cover;
+            background-position-y: 145%;
+            background-attachment: fixed;
+
+        }
+
+        .banner .container {
+            height: 70vh;
+            position: relative;
+        }
+
+        .banner .banner-title {
+            margin: 0px;
+            position: absolute;
+            top: 20%;
+            right: -300px;
+            transform: translate(-50%);
+            color: white;
+            background-color: rgba(244, 164, 969, 0.6);
+            ;
+            padding: 10px 25px;
+            font-size: 50px;
+            text-shadow: 5px 3px black;
+            font-weight: 500px;
+        }
+
+        .bottom-navbar {
+            background-color: sandybrown;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 50px;
+        }
+
+        .bottom-navbar:hover{
+            transition: 0.3s;
+            color: blue;
+        } 
+
+        .bottom-navbar a.link {
+            color: white;
+            text-decoration: none;
+            padding: 13px 90px;
+            display: block;
+            float: left;
+            font-size: 20px;
+        }
+
+
+        #section01 {
+            background-color: white;
+            padding: 80px 0;
+
+        }
+
+        #section01 .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+        }
+
+        #section01 .left_box img {
+            width: 100%;
+        }
+
+        #section02 {
+            background-color: wheat;
+            padding: 80px 0;
+        }
+
+        #section02 .left_box {
+            width: 50%;
+            padding: 0 20px;
+            color: black;
+            float: left;
+
+        }
+
+        #section02 .left_box img {
+            width: 100%;
+            float: right;
+
+        }
+
+        #section03 {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        #section03 .left_box {
+            float: left;
+            width: 33%;
+            padding: 0px 20px;
+        }
+
+        #section03 .left_box img {
+            width: 100%;
+        }
+
+        #section04 {
+            background-color: wheat;
+            padding: 80px 0;
+        }
+
+        #section04 h1 {
+            text-align: center;
+        }
+
+        #section04 p {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+        }
+
+        #section05 {
+            height: 50vh;
+            background-image: url(1210-21\單頁式網站\img\01.jpg);
+            background-size: cover;
+            background-position-y: 65%;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        #section05 .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(190, 185, 185, 0.6);
+            transition: 1.3s;
+        }
+
+        #section05 .overlay h1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: azure;
+            font-size: 70px;
+            opacity: 1;
+            transition: 1.3s;
+        }
+
+        #section05 .overlay:hover {
+            background-color: rgb(0, 0, 0)
+        }
+
+        #section05 .overlay:hover h1 {
+            opacity: 0;
+        }
+
+
+        footer{
+            font-size: 12px;
+            background-color: sandybrown;
+            color: black;
+            padding: 8px 0;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="top-navbar"></nav>
+
+    <div class="banner">
+        <div class="container"></div>
+        <h1 class="banner-title">台中最有溫度的城市小旅行</h1>
+    </div>
+
+    <nav class="bottom-navbar">
+        <div class="container">
+            <a class="link" href="section01"><b>後站人生</b></a>
+            <a class="link" href="section02"><b>青春倒退嚕</b></a>
+            <a class="link" href="section03"><b>親親時光印記</b></a>
+        </div>
+    </nav>
+
+    <section id="section01">
+        <div class="container">
+            <div class="left_box">
+                <img src="" alt="後站人生">
+            </div>
+
+            <div class="left_box">
+                <h1><b>後站人生是什麼樣的人生?</b> </h1>
+                <p>後站周邊並非傳統觀光路線，正因如此，出其不意的驚喜隱藏其中，隱者將帶領你一覽鐵道舊時風華，二訪服務街友相關單位，三探悠悠綠川之美，這是連台中人都可能陌生的隱藏路線</p>
+                <p>走入後站風景，猶如走入城市隱者的人生地圖，隱者一邊述說你不知道的後站風情與古老建築的智慧，一邊和你分享過往人生經歷，而隱者人生的暫時停靠站就是他們口中的「這裡」-「街友關懷協會」。火車前站是台中舊時繁榮昌盛的商圈，也是街友消磨時光的所在，然而五光十色之外，街友生活的場域發生在後站。</p>
+                <p>在「這裡」，有他們三餐得享溫飽、尋求打零工機會、解決沐浴煩惱、甚至是獲得一張床的地方。後站人生鑲著他們悲喜交雜的歲月，紀錄著他們笑淚交逅的平凡日常，並見證著自立人生的重啟之路。</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section02">
+        <div class="container">
+            <div class="left_box">
+                <h1><b>青春的紋理迎風搖晃</b></h1>
+                <p>老台中人也許會說「我年輕時都在第一廣場這裡逛街」或是「阮肖年時攏來家呷蜜豆冰，冰塊在嘴裡卡滋卡滋的...」，回想起青春歲月，人們總有聊不完的話題。</p>
+                <p>現在的巨大廢墟，曾是過去的娛樂商場；昔日的第一市場，成了今天的台中小東南亞。很難想像過去的中區人潮曾經摩肩擦踵，
+                    許多地方都曾風華一時，承載著為人津津樂道的事跡，巧的是，都遭受祝融之災而終至凋零沒落。透過隱者導覽我們看見不可逆的時間與無法重拾的往事，不勝唏噓，卻也慶幸回憶無法抹滅</p>
+                <p>我們多麼希望人們放下匆忙的腳步，在點與點之間慢慢移動，在早已習慣的城市裡發現不一樣的視角。隱者用最真誠的初心，相偕大夥一起倒退嚕回中區那段流金歲月。台中人的青春曾在此張揚狂放，我們知道情感可以跨越時空，讓不同世代的人們擁有相同的共鳴。
+                </p>
+            </div>
+            <div class="left_box">
+                <img src="1210-21\單頁式網站\img\10.jpg" alt="青春倒退嚕">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section03">
+        <div class="container">
+            <div class="left_box">
+                <img src="1210-21\單頁式網站\img\07.jpg" alt="親親">
+                <p>臺灣的名產之一，源起於台中的太陽餅，是許多人的童年回憶，那甜甜的滋味帶來簡單的幸福感。</p>
+                <p>本活動除了帶小朋友認識中區故事之外，也讓大家體驗自己的太陽餅自己做的樂趣。</p>
+            </div>
+            <div class="left_box">
+                <img src="08.jpg" alt="親親">
+                <p>隱者帶路，在共遊的過程裡，帶孩子用眼去觀察這座城市，用心去感受甘苦人努力生活的力量。</p>
+                <p>透過活動設計，讓孩子以較柔軟的方式接觸社會議題，這是一場寓教於樂的街頭浪行。</p>
+            </div>
+            <div class="left_box">
+                <img src="09.jpg" alt="親親">
+                <p>我們可以告訴孩子 :</p>
+                <p>1.尊重自己和他人 2.正面的價值觀</p>
+                <p>3.理解世界上不同群體 4. 保留文化的重要性</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section04">
+        <div class="container">
+            <h1> <b>隱者地圖</b></h1>
+            <p>台灣第一個獨立運作，"無社會捐款"，扶持與訓練隱者(包含街友，中高齡失業者與獨居長者)的社會企業，沿用英國社會企業的服務標準(表示65%的可分配盈餘皆再用於社會服務)
+                ，盼為弱勢族群改善教育並提供自給自足的機會。
+                2015年底「隱者地圖計畫」培訓隱者成為城市導覽員，是台中最有溫度，最具生命意義的導覽活動。2016年發行獨立刊物「小書The Small Issue」由隱者參與內容製作，希望幫助更多隱者改善生活。
+                民眾可以預約導覽行程或購買刊物，收入的6成作為隱者所得，不僅能提供他們一份工作來源，更能協助他們改變人生。</p>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+    <section id="section05">
+        <div class="overlay">
+            <h1>看不見不代表不存在</h1>
+        </div>
+    </section>
+
+    <footer>
+            <div class="clearfix"></div>
+            <div class="container">
+                Copyright@2018 HanksOAO Inc.保留一切權利。
+             </div>
+    </footer>
+
+   
+   
+</body>
+
+</html>
