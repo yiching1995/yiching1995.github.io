@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        .navbar {
+            width: 366px;
+            height: 100vh;
+            background-color: orange;
+            padding-top: 100px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .navbar .logo {
+            background-image: url("/img/logo.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 180px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+         .navbar ul {
+            margin-left: -60px;
+            text-align: center;
+        }
+
+         .navbar li {
+            list-style: none;
+        }
+
+         .navbar li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            letter-spacing: 5px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        .navbar .href ul li:active{
+            background-color: wheat;
+        }
+
+         #main {
+            width: calc(100% - 360px);
+           height: 100vh;
+            background-color: wheat;
+            margin-left: auto;
+            position: relative;
+            
+        }
+        #main .box_group {
+            height: 600px;
+            width: 100%;
+            max-width: 900px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        } 
+        #main .box01 {
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            background-image: url("/img/03.jpg");
+            background-repeat: no-repeat;
+            background-position-x: -325px;
+            background-position-y: -40px;
+
+        }
+        #main .box02 {
+            background-image: url("/img/06.jpg");
+            background-repeat: no-repeat;
+            background-position-x: -110px;
+            background-position-y: -90px;
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+        #main .box03 {
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            background-image: url("/img/07.jpg");
+            background-repeat: no-repeat;
+            background-position-x: -540px;
+            background-position-y: -90px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .pc{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+
+        .ham{
+            width: 50px;
+            height: 50px;
+            background-color:orange;
+            float: right;
+        }
+
+        @media screen and (max-width:1280px){    
+        #main .box01 {
+            width: 100%;
+            height: 50%;
+            background-position-x: -60px;
+            background-position-y: -140px;
+           
+        }
+        #main .box02 {
+            width: 50%;
+            height: 50%;
+            background-position-x: -50px;
+        }
+        #main .box03 {
+            width: 50%;
+            height: 50%;
+            background-position-x: -480px;
+        }
+        
+        @media screen and (max-width: 780px){
+            .navbar{
+                width: 100%;
+                height: 50px;
+                z-index: 666;
+                padding: 0px;
+            }
+            .navbar .logo{
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-left: 50px;
+            }
+            .navbar ul{
+                margin-top: 0;
+            }
+            .navbar li{
+                float: left;
+                margin-left: 50px;
+            }
+            #main{
+                width: 100%;
+            }
+            #main .box02 .box03{
+                height: 100%;
+            }
+        }
+        
+
+
+
+        
+
+        
+        
+         
+        
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="href">
+            <ul>
+                <li><a href="https://www.facebook.com/seetaichungcity/">隱者地圖粉絲團</a></li>
+                <li><a href=" m.me/seetaichungcity">預約報名導覽</a></li>
+                <li><a href="https://www.facebook.com/pg/seetaichungcity/events/?ref=page_internal">導覽路線介紹</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ham mobile"></div>
+    <div class="clearfix"></div>
+    </nav>
+    <div id="main">
+        <div class="box_group">
+            <div class="box01"></div>
+            <div class="box02"></div>
+            <div class="box03"></div>
+            <div class="clearfix"></div>
+        </div>
+</body>
+
+</html>
